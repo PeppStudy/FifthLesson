@@ -12,11 +12,9 @@ public class Count {
 
     public float calculate() {
         float sum = initialSum;
-        int term = 1;
 
-        while (term <= initialTerm) {
+        for(int i = 1; i <= initialTerm; i++) {
             sum += sum * 0.07;
-            term++;
         }
         return sum;
     }
